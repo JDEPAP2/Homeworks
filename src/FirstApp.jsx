@@ -2,33 +2,17 @@ import { useState } from "react"
 
 const FirstApp = ({value}) => {
     const [counter,setCounter] = useState(value)
-    const handleAdd = () => {
-        setCounter(counter + 1)
-        console.log(" callin handleAdd ")
-    }
-
+    const handleAdd = () => setCounter(counter + 1)
+    const handleSubstract = () => setCounter(counter - 1)
+    const handleReset = () => setCounter(0)
     return <>
         <h1> Counter </h1>
-        <p> El valor es: {counter} </p>
-        <button onClick={()=>handleAdd()}>+1</button>
+        <p> Value is: <b>{counter}</b></p>
+        <button onClick={()=>handleSubstract()}><b>-1</b></button>
+        <button onClick={()=>handleReset()}><b>0</b></button>
+        <button onClick={()=>handleAdd()}><b>+1</b></button>
     </>
 }
 
 export default FirstApp;
 
-// import PropTypes from 'prop-types';
-// const FirstApp = ({title, sum}) => {
-//     return<>
-//         <h1>{title}</h1>
-//         <span>{sum}</span>
-//     </>
-// }
-// FirstApp.PropTypes = {
-//     title: PropTypes.string.isRequired,
-//     sum: PropTypes.number.isRequired
-// }
-// FirstApp.defaultProps = {
-//     title: 'No hay titulos',
-//     sum: 300
-// }
-// export default FirstApp;
