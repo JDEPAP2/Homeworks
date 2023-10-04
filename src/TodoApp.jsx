@@ -1,11 +1,12 @@
 import { useReducer } from "react"
+import * as type from "./components/types"
 
 export const TodoApp = () => {
     const [todos, dispatch] = useReducer()
 
     const handleNewTodo = (todo) => {
         const action = {
-            type: "[TODO] ADD TODO",
+            type: type.CREATE_TODO,
             payload: todo
         }
         dispatch( action )
