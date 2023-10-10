@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import GiftExpertApp from './GiftExpertApp'
 import "./index.css"
+import { MultipleCustomHooks } from './components/MultipleCustomHooks/MultipleCustomHooks'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <GiftExpertApp/>
+    <MultipleCustomHooks/>
 )
