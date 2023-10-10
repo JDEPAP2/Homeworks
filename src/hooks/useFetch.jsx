@@ -9,9 +9,7 @@ export const useFetch = (url) => {
 
     const getFetch = async () => {
         try {
-            const api = await fetch(url, {
-                method: 'GET'
-            });
+            const api = await fetch(url);
             const data = await api.json();
 
             setState({
