@@ -1,8 +1,18 @@
 import { useReducer } from "react"
 import * as type from "./components/types"
+import { TodoAdd, TodoList } from "./components"
+import { TodoReducer } from "./reducers/TodoReducer"
+
+const initialState = [
+    {
+        id: new Date().getTime(),
+        description: "Hacer los Challenge",
+        done: false
+    }
+]
 
 export const TodoApp = () => {
-    const [todos, dispatch] = useReducer()
+    const [todos, dispatch] = useReducer(TodoReducer, initialState)
 
     const handleNewTodo = (todo) => {
         const action = {
@@ -13,9 +23,10 @@ export const TodoApp = () => {
     }
 
     return <>
-        <h1>TodoApp: 10, <small>pendientes: 2</small></h1>
+        <h1>TodoApp: {todos.length}, <small>pendientes: {todos.length}</small></h1>
         <hr/>
-        
+        <TodoAdd onNewTodo={handleNewTodo}></TodoAdd>
+        <TodoList todos={todos} ></TodoList>
 
     </>
 }
