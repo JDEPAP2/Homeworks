@@ -1,10 +1,8 @@
-import ComponentApp from "./ComponentApp";
-import FirstApp from "./FirstApp";
+import CategoryApp from "./CategoryApp";
 
 const App = () => {
   return <>
-    {/* <FirstApp value={1}/> */}
-    <ComponentApp/>
+    <CategoryApp/>
   </>
 }
 
