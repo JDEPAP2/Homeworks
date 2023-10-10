@@ -12,7 +12,7 @@ const GiftExpertApp = () => {
 
     return (
         <>
-            <h1>GifExpert</h1>
+            <h1>Gif Expert</h1>
             <AddCategory onAddCategory={onAddCategory}></AddCategory>
             {
                 categories.map(

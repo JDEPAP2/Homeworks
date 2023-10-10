@@ -6,6 +6,7 @@
 }
 
 .container {
+    position: relative;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -17,11 +18,26 @@
     margin: 10px 0;
 }
 
+.container:hover{
+    cursor: pointer;
+}
+
+.container:active {
+    width: 3000px;
+}
+
 .title{
+    color:transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.container:active .title{
     color: white;
     font-size: 12px;
     text-align: center;
     font-weight: bold;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -33,7 +49,7 @@
 
 .data_container{
     z-index: 1;
-    position: relative;
+    position: absolute;
     margin: 5px;
     display: flex;
     flex-direction: column;

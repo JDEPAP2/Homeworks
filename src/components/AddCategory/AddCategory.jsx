@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from "./AddCategory.module.css"
 
 const AddCategory = ({onAddCategory}) => {
     const [category, setCategory] = useState('')
@@ -10,7 +11,8 @@ const AddCategory = ({onAddCategory}) => {
     }
     return (
         <form onSubmit={(event)=> onSubmit(event)}>
-            <input type="text" value={category} onChange={(event) => setCategory(event.target.value)}></input>
+            <p className={styles.desc}>Escriba la categoria que desea buscar y presione enter.</p>
+            <input className={styles.input} type="text" value={category} onChange={(event) => setCategory(event.target.value)}></input>
         </form>
     )
 
