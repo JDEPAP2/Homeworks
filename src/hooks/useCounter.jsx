@@ -3,17 +3,17 @@ import { useState } from "react"
 export const useCounter = (firstN) => {
     const [count, setCount] = useState(firstN)
     
-    const Increment = ()=>{
+    const increment = ()=>{
         setCount(count+1)
     }
 
-    const Decrement = ()=>{
+    const decrement = ()=>{
         setCount(count-1)
     }
 
-    const Reset = ()=>{
+    const reset = ()=>{
         setCount(firstN)
     }
 
-    return [count, Increment, Decrement, Reset]
+    return {count, increment, decrement, reset}
 }
