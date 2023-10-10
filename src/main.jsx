@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./index.css"
-import { MultipleCustomHooks } from './components/MultipleCustomHooks/MultipleCustomHooks'
+import { Father } from './components/Father/Father'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <MultipleCustomHooks/>
+    <Father/>
 )
