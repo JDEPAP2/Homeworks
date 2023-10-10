@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import AddCategory from "./components/AddCategory"
-import GifGrid from "./components/GifGrid"
+import AddCategory from "./components/AddCategory/AddCategory"
+import GifGrid from "./components/GifGrid/GifGrid"
 
 
 const GiftExpertApp = () => {
-    const [categories, setCategotiries] = useState(['laura'])
+    const [categories, setCategotiries] = useState([])
 
     const onAddCategory = (category) => {
         setCategotiries(list => [...list, category])

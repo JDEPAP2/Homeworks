@@ -1,0 +1,16 @@
+.card_grid{
+    background-color: rgba(44, 44, 65, 0.521);
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    scroll-snap-align: start; 
+}
+
+.scrollable_container{
+    display: flex;
+    overflow-x: auto;
+    max-width: 1000px; 
+    scroll-snap-type: x mandatory;
+}

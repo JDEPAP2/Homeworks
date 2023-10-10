@@ -1,0 +1,43 @@
+.image {
+    margin: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    height: 200;
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    border: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.title{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.background{
+    filter: blur(50px);
+    background-size: cover;
+    height: 250px;
+}
+
+.data_container{
+    z-index: 1;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
