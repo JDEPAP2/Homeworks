@@ -1,0 +1,44 @@
+.Container{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(59, 73, 88);
+    align-items: center;
+}
+
+.Link{
+    color: white;
+}
+
+.Link:hover{
+    color: rgb(96, 121, 145);
+}
+
+.Active{
+    position: relative;
+    padding: 10px 20px;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.164));
+}
+
+.No_Active{
+    padding: 7px 10px;
+}
+
+.Component_Title{
+    background: linear-gradient(to left,rgba(255, 255, 255, 0.164),transparent);
+    padding: 7px 20px;
+}
+
+.Title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Divisor{
+    border: 0;
+}
