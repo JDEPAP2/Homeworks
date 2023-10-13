@@ -14,15 +14,9 @@ export const NavComponent = ()=>{
 
     return <>
         <div className={styles.Container}>
-            <div className={actual === "home"? styles.Active:styles.No_Active}>
-                <NavLink className={(param)=>getParam(param,"home")} to="/">Home</NavLink>
-            </div>
-            <div className={actual === "login"? styles.Active:styles.No_Active}>
-                <NavLink  className={(param)=>getParam(param,"login")} to="login">Login</NavLink>
-            </div>
-            <div className={actual === "about"? styles.Active:styles.No_Active}>
-                <NavLink className={(param)=>getParam(param,"about")} to="about">About</NavLink>
-            </div>
+            <NavLink className={(param)=>param.isActive?styles.Link:styles.Active_Link} to="/">Home</NavLink>
+            <NavLink  className={(param)=>param.isActive?styles.Link:styles.Active_Link} to="login">Login</NavLink>
+            <NavLink className={(param)=>param.isActive?styles.Link:styles.Active_Link} to="about">About</NavLink>
             <hr className={styles.Divisor}/>
             <div className={styles.Component_Title}>
                 <span className={styles.Title}>Nav App</span>

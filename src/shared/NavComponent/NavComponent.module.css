@@ -13,19 +13,16 @@
 
 .Link{
     color: white;
+    padding: 10px 20px;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.164));
 }
 
 .Link:hover{
     color: rgb(96, 121, 145);
 }
 
-.Active{
-    position: relative;
-    padding: 10px 20px;
-    background: linear-gradient(transparent, rgba(255, 255, 255, 0.164));
-}
-
-.No_Active{
+.Active_Link{
+    color: white;
     padding: 7px 10px;
 }
 
